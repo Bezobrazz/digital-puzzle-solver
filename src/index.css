@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+/* Базові стилі: основний текст — sans, числа — mono */
+@layer base {
+  html,
+  body {
+    @apply font-sans antialiased;
+  }
+
+  /* Елементи з числами — моноширинний шрифт */
+  [data-num],
+  .num,
+  input[type='number'],
+  .font-mono {
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  }
+}
